@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			TheMaze; ARTV 10300
+		</title>
+	</head>
+
+	<body background="goal.jpg">
+		<p style = "background-color: white">With tired steps here you come to find yourself in a room with two windows on opposite sides of a large door. Through them you see the way, not just home, but back to where you belong, back to the real life you live. The ability to once again have agency, to live life without these rigid structures, seems so beautiful now. All you have to do is walk through that door. <br>Unless -- you stop abruptly as you notice something on the door. It's a plaque that reads, "12 are needed to reach the end." <br>So... You can't do this alone. If only there were a way to communicate with others in other places around the maze, somehow, as though on some higher level of existence.<br>If only.</p>
+		<p style = "background-color: white">What's the secret phrase?</p>
+
+		<input id="numb">
+
+		<button type="button" onclick="myFunction()">Submit</button>
+
+		<a href = "final.html" id="yes" style = "background-color: white"></a>
+
+		<script>
+		function myFunction() {
+		    var x;
+
+		    x = document.getElementById("numb").value;
+
+		    if (x.length >= 15 && x.indexOf("Time") > 0) {
+		        document.getElementById("yes").innerHTML = "Everyone is here";
+		    } else {
+		        window.alert("Input not valid");
+		    }
+		    
+		}
+		</script>
+	</body>
+</html>
